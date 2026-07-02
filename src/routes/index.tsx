@@ -4,21 +4,32 @@ import { useState } from "react";
 import { Logo } from "@/components/Logo";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "ECLIPSSE™ UNIVERSE — Por y para Jóvenes" },
-      {
-        name: "description",
-        content:
-          "ECLIPSSE™ UNIVERSE — Streetwear y personalización por y para jóvenes. Marca oficial de Sevilla, España.",
-      },
-      { property: "og:title", content: "ECLIPSSE™ UNIVERSE" },
-      { property: "og:description", content: "Por y para Jóvenes." },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
+ head: () => ({
+  meta: [
+    { title: "ECLIPSSE™ UNIVERSE | Por y para jóvenes" },
+    {
+      name: "description",
+      content:
+        "Marca de ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+    },
+    { name: "robots", content: "index, follow" },
+    { property: "og:title", content: "ECLIPSSE™ UNIVERSE | Por y para jóvenes" },
+    {
+      property: "og:description",
+      content:
+        "Marca de ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://www.eclipssebrand.es/" },
+    { name: "twitter:title", content: "ECLIPSSE™ UNIVERSE | Por y para jóvenes" },
+    {
+      name: "twitter:description",
+      content:
+        "Marca de ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+    },
+  ],
+  links: [{ rel: "canonical", href: "https://www.eclipssebrand.es/" }],
+}),
   component: Landing,
 });
 
@@ -103,7 +114,7 @@ function Landing() {
         transition={{ duration: 0.7, delay: 0.7 }}
         className="font-display text-[10px] uppercase tracking-[0.4em] text-muted-foreground pb-8"
       >
-        Por y para Jóvenes
+        Por y para jóvenes
       </motion.p>
     </main>
   );
