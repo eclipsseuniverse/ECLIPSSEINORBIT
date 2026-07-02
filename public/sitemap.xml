@@ -1,67 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eclipsseuniverse.com/</loc>
+    <loc>https://www.eclipssebrand.es/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/eclipssebrand</loc>
+    <loc>https://www.eclipssebrand.es/eclipssebrand</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/personaliza</loc>
+    <loc>https://www.eclipssebrand.es/personaliza</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/prendas/camiseta-azul</loc>
+    <loc>https://www.eclipssebrand.es/prendas/camiseta-azul</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/prendas/camiseta-orbit</loc>
+    <loc>https://www.eclipssebrand.es/prendas/camiseta-orbit</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/prendas/camiseta-sun</loc>
+    <loc>https://www.eclipssebrand.es/prendas/camiseta-sun</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/prendas/camiseta-gris</loc>
+    <loc>https://www.eclipssebrand.es/prendas/camiseta-gris</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/prendas/gorra-verde</loc>
+    <loc>https://www.eclipssebrand.es/prendas/gorra-verde</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/legal/aviso-legal</loc>
+    <loc>https://www.eclipssebrand.es/legal/aviso-legal</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/legal/privacidad</loc>
+    <loc>https://www.eclipssebrand.es/legal/privacidad</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/legal/cookies</loc>
+    <loc>https://www.eclipssebrand.es/legal/cookies</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/legal/terminos</loc>
+    <loc>https://www.eclipssebrand.es/legal/terminos</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
+
   <url>
-    <loc>https://eclipsseuniverse.com/legal/devoluciones</loc>
+    <loc>https://www.eclipssebrand.es/legal/devoluciones</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
