@@ -13,18 +13,34 @@ import hero from "@/assets/hero_drop.jpeg.asset.json";
 export const Route = createFileRoute("/eclipssebrand")({
   head: () => ({
     meta: [
-      { title: "ECLIPSSEBRAND — Tienda oficial · ECLIPSSE™ UNIVERSE" },
+      { title: "ECLIPSSEBRAND | ECLIPSSE™ UNIVERSE" },
       {
         name: "description",
         content:
-          "Tienda oficial ECLIPSSE™ UNIVERSE — DROP 008. Camisetas oversize y gorras por y para jóvenes. Hecho en Sevilla, España.",
+          "Descubre las prendas y drops de ECLIPSSEBRAND. Marca de ropa por y para jóvenes. De Sevilla al mundo.",
       },
-      { property: "og:title", content: "ECLIPSSEBRAND — Tienda oficial" },
-      { property: "og:description", content: "DROP 008 — Por y para jóvenes." },
-      { property: "og:image", content: hero.url },
-      { property: "og:url", content: "/eclipssebrand" },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "ECLIPSSEBRAND | ECLIPSSE™ UNIVERSE" },
+      {
+        property: "og:description",
+        content:
+          "Descubre las prendas y drops de ECLIPSSEBRAND. Marca de ropa por y para jóvenes. De Sevilla al mundo.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.eclipssebrand.es/eclipssebrand" },
+      { name: "twitter:title", content: "ECLIPSSEBRAND | ECLIPSSE™ UNIVERSE" },
+      {
+        name: "twitter:description",
+        content:
+          "Descubre las prendas y drops de ECLIPSSEBRAND. Marca de ropa por y para jóvenes. De Sevilla al mundo.",
+      },
     ],
-    links: [{ rel: "canonical", href: "/eclipssebrand" }],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.eclipssebrand.es/eclipssebrand",
+      },
+    ],
   }),
   component: BrandPage,
 });
