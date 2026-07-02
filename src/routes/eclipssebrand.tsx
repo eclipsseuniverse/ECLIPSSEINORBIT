@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Marquee } from "@/components/Marquee";
 import { ContactCTA } from "@/components/ContactCTA";
@@ -255,6 +255,14 @@ function BrandPage() {
 
 function FaqItem({ q, a, historia }: { q: string; a: string; historia?: { t: string; d: string }[] }) {
   const [open, setOpen] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (!contentRef.current) return;
+    setHeight(open ? contentRef.current.scrollHeight : 0);
+  }, [open]);
+
   return (
     <div className="py-5 md:py-7">
       <button
@@ -266,12 +274,12 @@ function FaqItem({ q, a, historia }: { q: string; a: string; historia?: { t: str
         <span className={`text-2xl transition-transform duration-300 ${open ? "rotate-45" : ""}`} aria-hidden="true">+</span>
       </button>
       <motion.div
-        initial={false}
-        animate={{ height: open ? "auto" : 0, opacity: open ? 1 : 0 }}
+        animate={{ height, opacity: open ? 1 : 0 }}
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
         className="overflow-hidden"
+        style={{ height: 0 }}
       >
-        <div className="pt-5 text-sm md:text-base text-muted-foreground leading-relaxed">
+        <div ref={contentRef} className="pt-5 text-sm md:text-base text-muted-foreground leading-relaxed">
           <p>{a}</p>
           {historia && (
             <div className="mt-6 space-y-5">

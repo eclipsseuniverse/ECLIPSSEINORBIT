@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Marquee } from "@/components/Marquee";
 import { ContactCTA } from "@/components/ContactCTA";
@@ -50,25 +50,16 @@ function ProductPage() {
   const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
   const sizeGuideRef = useRef<HTMLDivElement>(null);
   const images = product.images;
-  const dragStartX = useRef<number | null>(null);
   const isCamiseta = product.category === "Camiseta";
+
+  useEffect(() => {
+    setActive(0);
+    setDirection(0);
+  }, [product.slug]);
 
   const goTo = (index: number) => {
     setDirection(index > active ? 1 : -1);
     setActive(index);
-  };
-
-  const handleDragStart = (e: React.PointerEvent) => {
-    dragStartX.current = e.clientX;
-  };
-
-  const handleDragEnd = (e: React.PointerEvent) => {
-    if (dragStartX.current === null) return;
-    const delta = e.clientX - dragStartX.current;
-    dragStartX.current = null;
-    if (Math.abs(delta) < 40) return;
-    if (delta < 0 && active < images.length - 1) goTo(active + 1);
-    else if (delta > 0 && active > 0) goTo(active - 1);
   };
 
   const openSizeGuide = () => {
@@ -92,10 +83,7 @@ function ProductPage() {
       <section className="mx-auto max-w-7xl px-5 md:px-8 py-10 md:py-16 grid md:grid-cols-2 gap-10 md:gap-16">
         <div>
           <div
-            className="relative aspect-[4/5] bg-muted overflow-hidden select-none cursor-grab active:cursor-grabbing"
-            onPointerDown={handleDragStart}
-            onPointerUp={handleDragEnd}
-            onPointerLeave={(e) => { if (dragStartX.current !== null) handleDragEnd(e); }}
+            className="relative aspect-[4/5] bg-muted overflow-hidden select-none"
           >
             <AnimatePresence initial={false} custom={direction} mode="popLayout">
               <motion.img
