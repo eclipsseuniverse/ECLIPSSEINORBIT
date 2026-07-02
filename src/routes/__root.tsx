@@ -102,19 +102,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     scripts: [
       {
         type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "ECLIPSSE™ UNIVERSE",
-          slogan: "Por y para jóvenes",
-          url: "/",
-          sameAs: ["https://www.instagram.com/eclipssebrand/"],
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Sevilla",
-            addressCountry: "ES",
-          },
-        }),
+      children: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "ECLIPSSE™ UNIVERSE",
+  alternateName: "ECLIPSSEBRAND",
+  slogan: "Por y para Jóvenes",
+  description:
+    "Marca de ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+  url: "https://www.eclipssebrand.es/",
+  sameAs: ["https://www.instagram.com/eclipssebrand/"],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Sevilla",
+    addressCountry: "ES",
+  },
+}),
       },
     ],
   }),
