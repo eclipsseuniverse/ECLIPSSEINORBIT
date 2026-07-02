@@ -21,7 +21,7 @@ export const Route = createFileRoute("/prendas/$slug")({
     const p = getProduct(params.slug);
     return {
       meta: [
-        { title: p ? `${p.name} — ECLIPSSE™ UNIVERSE` : "Prenda — ECLIPSSE™ UNIVERSE" },
+        { title: p ? `${p.name} — ECLIPSSE™ UNIVERSE` : "Prenda | ECLIPSSE™ UNIVERSE" },
         { name: "description", content: p?.description ?? "Prenda ECLIPSSE™ UNIVERSE" },
         ...(p ? [{ property: "og:image" as const, content: p.front }] : []),
         { property: "og:url", content: `/prendas/${params.slug}` },
