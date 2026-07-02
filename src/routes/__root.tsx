@@ -64,7 +64,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#ffffff" },
-    { title: "ECLIPSSE™ UNIVERSE | Por y para Jóvenes" },
+    { title: "ECLIPSSE™ UNIVERSE | Por y para jóvenes" },
 {
   name: "description",
   content:
@@ -73,7 +73,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 { name: "robots", content: "index, follow" },
 { property: "og:site_name", content: "ECLIPSSE™ UNIVERSE" },
 { property: "og:type", content: "website" },
-{ property: "og:title", content: "ECLIPSSE™ UNIVERSE | Por y para Jóvenes" },
+{ property: "og:title", content: "ECLIPSSE™ UNIVERSE | Por y para jóvenes" },
 {
   property: "og:description",
   content:
@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 },
 { property: "og:url", content: "https://www.eclipssebrand.es/" },
 { name: "twitter:card", content: "summary_large_image" },
-{ name: "twitter:title", content: "ECLIPSSE™ UNIVERSE | Por y para Jóvenes" },
+{ name: "twitter:title", content: "ECLIPSSE™ UNIVERSE | Por y para jóvenes" },
 {
   name: "twitter:description",
   content:
