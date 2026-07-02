@@ -10,14 +10,34 @@ import { Logo } from "@/components/Logo";
 export const Route = createFileRoute("/personaliza")({
   head: () => ({
     meta: [
-      { title: "PERSONALIZA — ECLIPSSE™ UNIVERSE" },
-      { name: "description", content: "ECLIPSSE™ UNIVERSE — Personalizamos tu idea. Camisetas, sudaderas y prendas a medida. Tú nos das la idea, nosotros la creamos." },
-      { property: "og:title", content: "PERSONALIZA — ECLIPSSE™ UNIVERSE" },
-      { property: "og:description", content: "Tú nos das la idea, nosotros la creamos." },
+      { title: "Personaliza tu ropa | ECLIPSSE™ UNIVERSE" },
+      {
+        name: "description",
+        content:
+          "Personaliza prendas con ECLIPSSE™ UNIVERSE. Ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Personaliza tu ropa | ECLIPSSE™ UNIVERSE" },
+      {
+        property: "og:description",
+        content:
+          "Personaliza prendas con ECLIPSSE™ UNIVERSE. Ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+      },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/personaliza" },
+      { property: "og:url", content: "https://www.eclipssebrand.es/personaliza" },
+      { name: "twitter:title", content: "Personaliza tu ropa | ECLIPSSE™ UNIVERSE" },
+      {
+        name: "twitter:description",
+        content:
+          "Personaliza prendas con ECLIPSSE™ UNIVERSE. Ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+      },
     ],
-    links: [{ rel: "canonical", href: "/personaliza" }],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.eclipssebrand.es/personaliza",
+      },
+    ],
   }),
   component: CustomPage,
 });
