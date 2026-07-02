@@ -64,15 +64,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#ffffff" },
-      { title: "ECLIPSSE™ UNIVERSE — Por y para jóvenes" },
-      {
-        name: "description",
-        content:
-          "ECLIPSSE™ UNIVERSE — Streetwear y personalización por y para jóvenes. Marca oficial de Sevilla, España.",
-      },
-      { property: "og:site_name", content: "ECLIPSSE™ UNIVERSE" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+    { title: "ECLIPSSE™ UNIVERSE | Por y para Jóvenes" },
+{
+  name: "description",
+  content:
+    "Marca de ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+},
+{ name: "robots", content: "index, follow" },
+{ property: "og:site_name", content: "ECLIPSSE™ UNIVERSE" },
+{ property: "og:type", content: "website" },
+{ property: "og:title", content: "ECLIPSSE™ UNIVERSE | Por y para Jóvenes" },
+{
+  property: "og:description",
+  content:
+    "Marca de ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+},
+{ property: "og:url", content: "https://www.eclipssebrand.es/" },
+{ name: "twitter:card", content: "summary_large_image" },
+{ name: "twitter:title", content: "ECLIPSSE™ UNIVERSE | Por y para Jóvenes" },
+{
+  name: "twitter:description",
+  content:
+    "Marca de ropa y personalización por y para jóvenes. De Sevilla al mundo.",
+},
     ],
     links: [
       { rel: "stylesheet", href: appCss },
